@@ -103,14 +103,14 @@ This is not a hobbyist shield or a breakout board. Every subsystem — power arc
 ```
 GameBoy/
 ├── Schematic/
-│   ├── GameBoy.kicad_sch          # Main MCU schematic sheet
-│   ├── ESP32_S3.kicad_sch         # ESP32-S3 subcircuit sheet
-│   └── GameBoy.kicad_pro          # KiCad project file
+│   ├── V1.0.pdf          # Main MCU schematic sheet
+│   ├── V1.0.pdf         # Main MCU schematic sheet + ESP32-S3 subcircuit sheet
 ├── Docs/
-│   └── architecture_notes.md      # Design decisions and rationale
-├── Firmware/
-│   ├── MSPM0/                     # Code Composer Studio project (TBD)
-│   └── ESP32/                     # ESP-IDF project (TBD)
+│   └── esp32_devkitc_v4-sch.pdf        # ESP32 Device schematic reference
+|   └── mspm0g3507_Ti.pdf       # MSPM0 Instruction Manual
+├── Docs/
+│   ├── V1.0.md/                     # upadtes implemented in schematic one
+│   └── V2.0.md/                     # updates implemented in schematic two
 └── README.md
 ```
 
@@ -173,8 +173,7 @@ The LM66200 is an ideal diode controller with 40mΩ on-resistance, automatic pri
 
 ## Author
 
-Designed by a 2nd year ECE student as an independent hardware project.  
-Shirpur, Maharashtra, India — 2026
+Darkops-CPU (Jayant Yadav)
 
 ---
 
