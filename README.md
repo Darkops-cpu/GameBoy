@@ -144,8 +144,8 @@ The LM66200 is an ideal diode controller with 40mΩ on-resistance, automatic pri
 | System architecture | ✅ Complete |
 | MSPM0 schematic | ✅ Complete |
 | ESP32-S3 schematic | ✅ Complete |
-| Power section schematic | 🔄 In progress |
-| PCB layout | ⏳ Not started |
+| Power section schematic | ✅ Complete |
+| PCB layout | 🔄 In progress |
 | Fabrication | ⏳ Pending layout |
 | Firmware — MSPM0 | ⏳ Pending hardware |
 | Firmware — ESP32-S3 | ⏳ Pending hardware |
