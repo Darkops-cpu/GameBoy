@@ -6,6 +6,10 @@ A custom dual-processor embedded development platform built around the **Texas I
 
 > Designed from scratch in KiCad 9.0.8 — schematic complete, PCB layout in progress.
 
+## Project Summary
+
+GameBoy is a dual-MCU embedded platform that combines the real-time control of the MSPM0G3507 with the wireless connectivity of the ESP32-S3-WROOM-1. The board uses a dedicated UART bridge between the two processors, includes onboard programming and debug interfaces, and is being developed as a compact hardware platform for prototyping, sensor integration, and IoT-oriented experiments. The current revision is a 4-layer board to support cleaner routing, better power integrity, and improved overall layout density.
+
 ---
 
 ## Overview
@@ -28,7 +32,7 @@ This is not a hobbyist shield or a breakout board. Every subsystem — power arc
 | Battery charging | MCP73831 linear charger — 300mA via USB-C |
 | Power path | LM66200DRLR ideal diode — automatic USB / battery switchover |
 | Crystal | 8MHz external oscillator for MSPM0 |
-| PCB layers | 2-layer |
+| PCB layers | 4-layer |
 | EDA tool | KiCad 9.0.8 |
 
 ---
@@ -129,8 +133,8 @@ The S3 supports BLE 5.0 and has a native USB peripheral on IO19/IO20, keeping fu
 **Why CP2102N for ESP32 programming instead of using native USB?**
 Native USB on IO19/IO20 works, but is dependent on the ESP32-S3 firmware being functional. A dedicated CP2102N with auto-boot circuit means the programming interface is always independent of firmware state — critical on a prototyping board where firmware is frequently broken during development.
 
-**Why 2-layer PCB?**
-Cost and accessibility. A proper antenna keepout zone, solid GND pour on the bottom layer, and GND stitching vias around the ESP32-S3 module perimeter compensate adequately for the absence of a dedicated ground plane for a prototyping use case.
+**Why 4-layer PCB?**
+The 4-layer stackup improves power distribution, signal routing, and ground integrity for the dual-MCU design. It also gives cleaner separation between noisy digital sections, the ESP32-S3 RF area, and the power subsystem while making the board easier to route at the current feature density.
 
 **Why LM66200 for power path instead of a discrete P-FET?**
 The LM66200 is an ideal diode controller with 40mΩ on-resistance, automatic priority switching, reverse current blocking, and 1.32µA quiescent current — all in one IC with no external switching logic required. The discrete P-FET approach requires careful gate biasing and does not block reverse current.
