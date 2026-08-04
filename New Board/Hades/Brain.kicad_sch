@@ -1,0 +1,173 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "635b7083-eae6-42e6-bd0a-577bbdf9368c")
+	(paper "A4")
+	(lib_symbols)
+	(text "Slave Circuit"
+		(exclude_from_sim no)
+		(at 230.124 114.046 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "1a6da981-40d6-42ed-aad1-4c8ff9b7a427")
+	)
+	(text "Master Circuit"
+		(exclude_from_sim no)
+		(at 153.67 113.538 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "9536eebe-237b-443d-bb58-4f4e181f7cb6")
+	)
+	(text "Battery Input"
+		(exclude_from_sim no)
+		(at 74.93 113.538 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "e4ca8852-f921-4b17-bddd-cd6708f59d57")
+	)
+	(sheet
+		(at 127 50.8)
+		(size 50.8 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "78965656-395c-45db-bb4f-8b56dfb5b3d2")
+		(property "Sheetname" "MSPM0"
+			(at 127 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MSPM0.kicad_sch"
+			(at 127 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hades"
+				(path "/7bc8c9ac-e65a-49b7-9716-596d9dbf1f2a/e2df23f6-36da-4f0d-b2f8-6830c1152530"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 50.8)
+		(size 50.8 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c05cce4e-8255-4160-969a-1b70040be580")
+		(property "Sheetname" "ESP32-S3"
+			(at 203.2 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32.kicad_sch"
+			(at 203.2 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hades"
+				(path "/7bc8c9ac-e65a-49b7-9716-596d9dbf1f2a/e2df23f6-36da-4f0d-b2f8-6830c1152530"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 50.8)
+		(size 50.8 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d512fc1d-180c-4ab9-884c-166dfd8adef8")
+		(property "Sheetname" "Battery Input"
+			(at 50.8 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Battery.kicad_sch"
+			(at 50.8 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hades"
+				(path "/7bc8c9ac-e65a-49b7-9716-596d9dbf1f2a/e2df23f6-36da-4f0d-b2f8-6830c1152530"
+					(page "4")
+				)
+			)
+		)
+	)
+)
